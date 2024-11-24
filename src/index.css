@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFAFA;
+    color: #2B283A;
+}
+
+.container {
+    margin: 45px 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background: #F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 55px;
+    padding: 0 10px;
+}
+
+header > img {
+    width: 24px;
+    margin-right: 7px;
+}
+
+header > h1 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+article.journal-entry {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+article.journal-entry .main-image-container {
+    width: 125px;
+    height: 168px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+article.journal-entry .main-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container span.country {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-right: 12px;
+    color: #F55A5A;
+    display: inline-block;
+}
+
+.info-container a {
+    font-size: 0.75rem;
+    color: #2B283A;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.info-container a:hover {
+    text-decoration: underline;
+}
+
+.info-container a:visited {
+    color: #918E9B;
+}
+
+.info-container h2.entry-title {
+    margin-top: 7px;
+    margin-bottom: 17px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.info-container p.trip-dates {
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.info-container p.entry-text {
+    line-height: 1.5;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #555;
+}
+
+article.journal-entry .marker {
+    width: 7px;
+    margin-right: 4px;
+    align-self: flex-start;
+}
